@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 375px;
+}
+.divider {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.first img,
+.four img {
+  border: 2px solid hsl(263, 100%, 76%);
+}
+.quotation {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  background: url(./images/bg-pattern-quotation.svg);
+}
+.first .bold-par p {
+  position: relative;
+  z-index: 2;
+}
+.content h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.content span {
+  color: hsl(0, 0%, 81%);
+  font-size: 13px;
+}
+
+.bold-par p {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.description p {
+  color: hsl(0, 0%, 81%);
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 70%;
+}
+.first {
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  position: relative;
+}
+
+.second {
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+}
+
+.third {
+  margin-top: 30px;
+  background-color: white;
+}
+.four {
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+}
+.fifth {
+  background-color: white;
+}
+.fifth .description p,
+.third .description p {
+  color: hsl(0, 0%, 50%);
+}
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    max-width: 1500px;
+    gap: 30px;
+  }
+  .first-combination {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .divider {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .card {
+    height: 300px;
+  }
+  .quotation {
+    margin-left: 60%;
+  }
+  .third {
+    margin-top: 0;
+  }
+  .fifth {
+    max-width: 300px;
+    height: 625px;
+  }
+}
